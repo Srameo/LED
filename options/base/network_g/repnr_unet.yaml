@@ -1,0 +1,14 @@
+repnr_opt:
+  dont_convert_module:
+    - 'conv10_1'
+  branch_num: 5
+  align_opts:
+    init_weight: 1.0
+    init_bias: 0.0
+
+# network structures
+network_g:
+  type: UNetArch
+  inchannels: 4
+  outchannels: 4
+  channels: 32

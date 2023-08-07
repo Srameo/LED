@@ -1,0 +1,27 @@
+base:
+- options/base/dataset/pretrain/SID_raw_gt.yaml           # train dataset
+- options/base/dataset/test/SID_SonyA7S2_val_split.yaml   # test dataset
+- options/base/network_g/repnr_unet.yaml                  # network_g
+- options/base/noise_g/noise_g_virtual.yaml               # noise_g
+- options/base/pretrain/CVPR20_ELD.yaml                   # train
+- options/base/val_and_logger.yaml                        # val + logger
+
+name: LED_Pretrain_CVPR20_ELD_Setting_Ratio1-200
+model_type: RAWImageDenoisingModel
+scale: 1
+num_gpu: 1
+manual_seed: 2022
+
+datasets:
+  train:
+    ratio_range: [1, 200]
+
+path:
+  pretrain_network_g: ~
+  predefined_noise_g: pretrained/noise_g/VirtualNoisyPairGenerator_ELD_ptrqc_5VirtualCameras.pth
+  strict_load_g: true
+  resume_state: ~
+  CRF: datasets/ICCV23-LED/EMoR
+
+val:
+  illumination_correct: true

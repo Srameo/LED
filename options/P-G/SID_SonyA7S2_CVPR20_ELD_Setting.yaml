@@ -1,0 +1,25 @@
+base:
+- options/base/dataset/pretrain/SID_raw_gt.yaml           # train dataset
+- options/base/dataset/test/SID_SonyA7S2_val_split.yaml   # test dataset
+- options/base/network_g/unet.yaml                        # network_g
+- options/base/noise_g/noise_g_SonyA7S2.yaml              # noise_g
+- options/base/pretrain/CVPR20_ELD.yaml                   # train
+- options/base/val_and_logger.yaml                        # val + logger
+
+name: P-G_SID_SonyA7S2_CVPR20_ELD_Setting
+model_type: RAWImageDenoisingModel
+scale: 1
+num_gpu: 1
+manual_seed: 2022
+
+noise_g:
+  noise_type: pg
+
+path:
+  pretrain_network_g: ~
+  strict_load_g: true
+  resume_state: ~
+  CRF: datasets/ICCV23-LED/EMoR
+
+val:
+  illumination_correct: true

@@ -1,0 +1,33 @@
+datasets:
+  val_100:
+    name: SIDSonyA7S2Paired100
+    type: PairedRAWDataset
+    dataroot: datasets/ICCV23-LED/Sony_npy
+    postfix: npz
+    which_meta: gt
+    data_pair_list: datasets/ICCV23-LED/Sony_npy/valid_100.txt
+    zero_clip: false
+    crop_size: ~
+    load_in_mem: false
+
+  val_250:
+    name: SIDSonyA7S2Paired250
+    type: PairedRAWDataset
+    dataroot: datasets/ICCV23-LED/Sony_npy
+    postfix: npz
+    which_meta: gt
+    data_pair_list: datasets/ICCV23-LED/Sony_npy/valid_250.txt
+    zero_clip: false
+    crop_size: ~
+    load_in_mem: false
+
+  val_300:
+    name: SIDSonyA7S2Paired300
+    type: PairedRAWDataset
+    dataroot: datasets/ICCV23-LED/Sony_npy
+    postfix: npz
+    which_meta: gt
+    data_pair_list: datasets/ICCV23-LED/Sony_npy/valid_300.txt
+    zero_clip: false
+    crop_size: ~
+    load_in_mem: false

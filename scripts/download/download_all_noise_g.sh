@@ -1,0 +1,16 @@
+mkdir -p pretrained/noise_g
+
+echo Downloading VirtualNoisyPairGenerator_ELD_ptrqc_5VirtualCameras.pth...
+python scripts/download_gdrive.py --id 1XgL8ofYcD0LWGI0VpaG6LjtddmSoUL2j --save-path pretrained/noise_g/VirtualNoisyPairGenerator_ELD_ptrqc_5VirtualCameras.pth
+
+echo Downloading CalibratedNoisyPairGenerator_ELD_ptrqc_SonyA7S2.pth...
+python scripts/download_gdrive.py --id 1XjzOKoqZ36CMc_cesuTQX8zQrOUHJHKS --save-path pretrained/noise_g/CalibratedNoisyPairGenerator_ELD_ptrqc_SonyA7S2.pth
+
+echo Downloading CalibratedNoisyPairGenerator_ELD_ptrqc_NikonD850.pth...
+python scripts/download_gdrive.py --id 1XdDsm7jgZcSzqScrCCCnFlRiotERq1Jn --save-path pretrained/noise_g/CalibratedNoisyPairGenerator_ELD_ptrqc_NikonD850.pth
+
+echo Downloading CalibratedNoisyPairGenerator_PG_pg_SonyA7S2.pth...
+python scripts/download_gdrive.py --id 1HRvepo_AgB2fH7QMt11Kv89-wAuY9zh3 --save-path pretrained/noise_g/CalibratedNoisyPairGenerator_PG_pg_SonyA7S2.pth
+
+echo Downloading CalibratedNoisyPairGenerator_PG_pg_NikonD850.pth...
+python scripts/download_gdrive.py --id 185hWUXjsmPSNr8LIQTTTZWdMKsTsLTzt --save-path pretrained/noise_g/CalibratedNoisyPairGenerator_PG_pg_NikonD850.pth

@@ -1,0 +1,42 @@
+base:
+- options/base/network_g/repnr_unet.yaml  # network_g
+- options/base/finetune/CVPR20_ELD.yaml   # train
+- options/base/val_and_logger.yaml        # val + logger
+
+# dataset and data loader settings
+datasets:
+  train:
+    name: DemoFinetuneDataset
+    type: FewshotPairedRAWDataset
+    dataroot: ~
+    which_meta: gt
+    data_pair_list: ~
+    zero_clip: false
+
+    use_hflip: true
+    use_rot: true
+    crop_size: 1024
+
+name: ~
+model_type: LEDFinetuneModel
+scale: 1
+num_gpu: 1
+manual_seed: 2022
+
+# add oomn conv for finetuning
+repnr_opt:
+  aux_conv_opts:
+    bias: true
+    init: zero_init_
+
+path:
+  pretrain_network_g: ~
+  strict_load_g: false
+  resume_state: ~
+
+val:
+  val_freq: !!float 99999
+  illumination_correct: true
+
+logger:
+  save_checkpoint_freq: !!float 99999

@@ -1,0 +1,29 @@
+datasets:
+  train:
+    # data loadecr
+    num_worker_per_gpu: 8
+    batch_size_per_gpu: 1
+    dataset_enlarge_ratio: 1
+    prefetch_mode: ~
+
+# training settings
+train:
+  optim_g:
+    type: Adam
+    lr: !!float 1e-4
+    weight_decay: 0
+    betas: [0.9, 0.999]
+
+  scheduler:
+    type: HandieLR
+    milestones: [128800, 231840]
+    lrs: [5.0e-5, 1.0e-5]
+
+  total_iter: 257600
+  warmup_iter: -1  # no warm up
+
+  # losses
+  pixel_opt:
+    type: L1Loss
+    loss_weight: 1.0
+    reduction: mean

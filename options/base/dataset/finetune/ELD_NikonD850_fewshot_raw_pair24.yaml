@@ -1,0 +1,15 @@
+# dataset and data loader settings
+datasets:
+  train:
+    name: ELDNikonD850FewShot6x
+    type: PairedRAWDataset
+    dataroot: datasets/ICCV23-LED/ELD/NikonD850
+    postfix: ~
+    which_meta: gt
+    data_pair_list: datasets/ICCV23-LED/ELD/NikonD850/NikonD850_train_list.txt
+    zero_clip: false
+
+    use_hflip: true
+    use_rot: true
+    crop_size: 1024
+    load_in_mem: true

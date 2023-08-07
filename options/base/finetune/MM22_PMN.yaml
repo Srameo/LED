@@ -1,0 +1,48 @@
+datasets:
+  train:
+    # data loadecr
+    num_worker_per_gpu: 8
+    batch_size_per_gpu: 1
+    dataset_enlarge_ratio: 99999
+    prefetch_mode: ~
+
+# training settings
+train:
+  generalize_first: true
+
+  # losses
+  pixel_opt:
+    type: L1Loss
+    loss_weight: 1.0
+    reduction: mean
+
+  total_iter: 1500
+  align_iter: &align_iter 1000
+  oomn_iter:  &oomn_iter  500
+  warmup_iter: -1  # no warm up
+
+  align_opt:
+    optim_g:
+      type: Adam
+      lr: !!float 1e-4
+      weight_decay: 0
+      betas: [0.9, 0.999]
+
+    scheduler:
+      type: CosineAnnealingRestartLR
+      eta_min: !!float 0
+      periods: [*align_iter]
+      restart_weights: [1]
+
+  oomn_opt:
+    optim_g:
+      type: Adam
+      lr: !!float 1e-5
+      weight_decay: 0
+      betas: [0.9, 0.999]
+
+    scheduler:
+      type: CosineAnnealingRestartLR
+      eta_min: !!float 0
+      periods: [*oomn_iter]
+      restart_weights: [1]

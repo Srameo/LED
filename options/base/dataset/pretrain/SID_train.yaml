@@ -1,0 +1,15 @@
+# dataset and data loader settings
+datasets:
+  train:
+    name: SIDTrain
+    type: PairedRAWDataset
+    dataroot: datasets/ICCV23-LED/Sony_npy
+    postfix: npz
+    which_meta: gt
+    data_pair_list: datasets/ICCV23-LED/Sony_npy/train.txt
+    zero_clip: false
+
+    use_hflip: true
+    use_rot: true
+    crop_size: 1024
+    load_in_mem: false

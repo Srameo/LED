@@ -1,0 +1,44 @@
+datasets:
+  val_1:
+    name: ELDSonyA7S2Paired1
+    type: PairedRAWDataset
+    dataroot: datasets/ICCV23-LED/ELD_npy/SonyA7S2
+    postfix: npz
+    which_meta: gt
+    data_pair_list: datasets/ICCV23-LED/ELD_npy/SonyA7S2/SonyA7S2_list_1_wo_train.txt
+    zero_clip: false
+    crop_size: ~
+    load_in_mem: false
+
+  val_10:
+    name: ELDSonyA7S2Paired10
+    type: PairedRAWDataset
+    dataroot: datasets/ICCV23-LED/ELD_npy/SonyA7S2
+    postfix: npz
+    which_meta: gt
+    data_pair_list: datasets/ICCV23-LED/ELD_npy/SonyA7S2/SonyA7S2_list_10_wo_train.txt
+    zero_clip: false
+    crop_size: ~
+    load_in_mem: false
+
+  val_100:
+    name: ELDSonyA7S2Paired100
+    type: PairedRAWDataset
+    dataroot: datasets/ICCV23-LED/ELD_npy/SonyA7S2
+    postfix: npz
+    which_meta: gt
+    data_pair_list: datasets/ICCV23-LED/ELD_npy/SonyA7S2/SonyA7S2_list_100_wo_train.txt
+    zero_clip: false
+    crop_size: ~
+    load_in_mem: false
+
+  val_200:
+    name: ELDSonyA7S2Paired200
+    type: PairedRAWDataset
+    dataroot: datasets/ICCV23-LED/ELD_npy/SonyA7S2
+    postfix: npz
+    which_meta: gt
+    data_pair_list: datasets/ICCV23-LED/ELD_npy/SonyA7S2/SonyA7S2_list_200_wo_train.txt
+    zero_clip: false
+    crop_size: ~
+    load_in_mem: false

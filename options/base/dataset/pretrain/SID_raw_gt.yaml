@@ -1,0 +1,15 @@
+datasets:
+  train:
+    name: RAWGT
+    type: RAWGTDataset
+    dataroot: datasets/ICCV23-LED/Sony_train_long_patches
+    postfix: npz
+
+    zero_clip: false
+    ratio_range: [100, 300]
+    use_patches: true
+
+    use_hflip: true
+    use_rot: true
+    crop_size: ~
+    load_in_mem: false
