@@ -14,7 +14,7 @@ This repository contains the official implementation of the following paper:
 
 <details>
 <summary>Comparaison with Calibration-Based Method</summary>
-<img src='https://github.com/Srameo/LED/assets/51229295/b27ab93c-5e0a-412b-a722-ef37581ae6f9' alt='ICCV23_LED_TEASER0' width='500px'/>
+<img src='https://github.com/Srameo/LED/assets/51229295/022505b0-8ff0-445b-ab1f-bb79b48ecdbd' alt='ICCV23_LED_TEASER0' width='500px'/>
 </details>
 
 LED is a **Calibration-Free** Pipeline for RAW Denoising (currently for extremely low-light conditions).
@@ -24,10 +24,10 @@ Achieveing <b style='font-size: large'>SOTA performance</b> in <b style='font-si
 
 <table>
   <tbody>
-    <tr><td><img src='https://github.com/Srameo/LED/assets/51229295/f00f6a9b-9948-48b4-a40a-fe70414058c6' alt='ICCV23_LED_TEASER1'/>
-    </td><td><img src='https://github.com/Srameo/LED/assets/51229295/6c220360-4534-443a-b84d-cdd57ea749fa' alt='ICCV23_LED_TEASER2'/></td></tr>
-    <tr><td><details><summary>More Teaser</summary><img src='https://github.com/Srameo/LED/assets/51229295/fd76b5fc-bd54-4077-ad14-939e9187e059' alt='ICCV23_LED_TEASER3'/></details></td>
-    <td><details><summary>More Teaser</summary><img src='https://github.com/Srameo/LED/assets/51229295/3f882c39-7f5a-470e-aa12-a1100ebc981b' alt='ICCV23_LED_TEASER4'/></details></td></tr>
+    <tr><td><img src='https://github.com/Srameo/LED/assets/51229295/5311798d-f988-48f7-b50e-7cd080d7316c' alt='ICCV23_LED_TEASER1'/>
+    </td><td><img src='https://github.com/Srameo/LED/assets/51229295/3403a346-cd54-435c-b0b3-46b716863719' alt='ICCV23_LED_TEASER2'/></td></tr>
+    <tr><td><details><summary>More Teaser</summary><img src='https://github.com/Srameo/LED/assets/51229295/0c737715-919a-49a9-a115-76935b74a5bb' alt='ICCV23_LED_TEASER3'/></details></td>
+    <td><details><summary>More Teaser</summary><img src='https://github.com/Srameo/LED/assets/51229295/c3af68de-9e6d-47c9-8365-743be671ad77' alt='ICCV23_LED_TEASER4'/></details></td></tr>
   </tbody>
 </table>
 
