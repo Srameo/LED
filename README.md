@@ -1,3 +1,7 @@
+<p align="center">
+  <img src='.assets/logo.svg' alt='ICCV23_LED_LOGO' width='200px'/>
+</p>
+
 # :bulb: LED: Lighting Every Darkness in Two Pairs!
 
 This repository contains the official implementation of the following paper:
@@ -9,6 +13,7 @@ This repository contains the official implementation of the following paper:
 \[[Homepage](https://srameo.github.io/projects/led-iccv23/)\]
 \[[Paper](https://arxiv.org/abs/2308.03448)]
 \[[Google Drive](https://drive.google.com/drive/folders/11MYkjzbPIZ7mJbu9vrgaVC-OwGcOFKsM?usp=sharing)]
+\[[知乎](https://zhuanlan.zhihu.com/p/648242095)\]
 \[Poster (TBD)\]
 \[Video (TBD)\]
 
@@ -40,6 +45,7 @@ Achieveing <b style='font-size: large'>SOTA performance</b> in <b style='font-si
 
 > Future work can be found in [todo.md](docs/todo.md).
 
+- **Aug, 2023**: We released a Chinese explanation of our paper on [知乎](https://zhuanlan.zhihu.com/p/648242095).
 - **Aug, 2023**: Our code is publicly available!
 - **July, 2023**: Our paper "Lighting Every Darkness in Two Pairs: A Calibration-Free Pipeline for RAW Denoising" has been accepted by ICCV 2023.
 
@@ -200,7 +206,8 @@ For commercial licensing, please contact `cmm[AT]nankai.edu.cn`.
 
 ## :handshake: Acknowledgement
 
-This repository borrows heavily from [BasicSR](https://github.com/XPixelGroup/BasicSR), [Learning-to-See-in-the-Dark](https://github.com/cchen156/Learning-to-See-in-the-Dark) and [ELD](https://github.com/Vandermode/ELD).
+This repository borrows heavily from [BasicSR](https://github.com/XPixelGroup/BasicSR), [Learning-to-See-in-the-Dark](https://github.com/cchen156/Learning-to-See-in-the-Dark) and [ELD](https://github.com/Vandermode/ELD).<br/>
+We would like to extend heartfelt gratitude to [Ms. Li Xinru](https://issuu.com/lerryn) for crafting the exquisite logo for our project.
 
 <!-- We also thank all of our contributors.
 
