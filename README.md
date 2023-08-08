@@ -7,7 +7,7 @@ This repository contains the official implementation of the following paper:
 > In ICCV 2023
 
 \[[Homepage](https://srameo.github.io/projects/led-iccv23/)\]
-\[[Paper](https://srameo.github.io/projects/led-iccv23/assets/paper/1819_arxiv_v1_more_visual_results.pdf)]
+\[[Paper](https://arxiv.org/abs/2308.03448)]
 \[[Google Drive](https://drive.google.com/drive/folders/11MYkjzbPIZ7mJbu9vrgaVC-OwGcOFKsM?usp=sharing)]
 \[Poster (TBD)\]
 \[Video (TBD)\]
