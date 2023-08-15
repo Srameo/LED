@@ -45,6 +45,7 @@ Achieveing <b style='font-size: large'>SOTA performance</b> in <b style='font-si
 
 > Future work can be found in [todo.md](docs/todo.md).
 
+- **Aug, 15, 2023**: For faster benchmark, we released the relevant files in commit [`fadffc7`](https://github.com/Srameo/LED/commit/fadffc7282b02ab2fcc7fbade65f87217b642588).
 - **Aug, 2023**: We released a Chinese explanation of our paper on [知乎](https://zhuanlan.zhihu.com/p/648242095).
 - **Aug, 2023**: Our code is publicly available!
 - **July, 2023**: Our paper "Lighting Every Darkness in Two Pairs: A Calibration-Free Pipeline for RAW Denoising" has been accepted by ICCV 2023.

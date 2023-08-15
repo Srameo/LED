@@ -8,6 +8,7 @@
   - [Data Preparation](#data-preparation)
     - [Acceleration for Training and Testing](#acceleration-for-training-and-testing)
     - [Download the Data Pair List](#download-the-data-pair-list)
+    - [Visualization](#visualization)
   - [Pretrained Models](#pretrained-models)
   - [Training](#training)
   - [Evaluation](#evaluation)
@@ -103,6 +104,9 @@ python scripts/data_preparation/bayer_to_npy.py --data-path datasets/ICCV23-LED/
 
 > The summay of the data pair list can be found in [Google Drive](https://drive.google.com/drive/folders/1xZbJPfJoXmq4fWJWy3tXtULEn79Xoz5O?usp=drive_link).
 
+> Since commit [`fadffc7`](https://github.com/Srameo/LED/commit/fadffc7282b02ab2fcc7fbade65f87217b642588), the data pair list for benchmark has been added in [datasets/txtfiles](../datasets/txtfiles).
+
+
 Like SID, we use txt files to identify the images for training or testing.<br/>
 To evalute or train LED using our proposed code, you should download the corresponding txt file and put them in the right place. Or change the `data_pair_list` property in `dataset:train:dataroot` option.
 
@@ -148,6 +152,13 @@ To evalute or train LED using our proposed code, you should download the corresp
   </tr>
 </tbody>
 </table>
+
+
+### Visualization
+
+> Since commit [`fadffc7`](https://github.com/Srameo/LED/commit/fadffc7282b02ab2fcc7fbade65f87217b642588), the EMoR data for fast visualization has been added in [datasets/EMoR](../datasets/EMoR).
+
+Download the EMoR files calibrated by [ELD](https://github.com/Vandermode/ELD) in [Google Drive](https://drive.google.com/drive/folders/1U6W-qXqnZl-5-dLpFhLAGLjniBH5yAYY?usp=drive_link) for fast visualization using GPU.
 
 
 ## Pretrained Models
