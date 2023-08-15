@@ -6,7 +6,7 @@ datasets:
     dataroot: datasets/ICCV23-LED/Sony_npy
     postfix: npz
     which_meta: gt
-    data_pair_list: datasets/ICCV23-LED/Sony_npy/train.txt
+    data_pair_list: datasets/txtfiles/SID/SonyA7S2/train.txt
     zero_clip: false
 
     use_hflip: true

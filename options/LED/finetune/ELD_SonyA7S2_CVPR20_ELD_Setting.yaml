@@ -21,7 +21,7 @@ path:
   pretrain_network_g: pretrained/network_g/LED_Pretrain_None_None_CVPR20_Setting_Ratio1-200.pth
   strict_load_g: false
   resume_state: ~
-  CRF: datasets/ICCV23-LED/EMoR
+  CRF: datasets/EMoR
 
 val:
   val_freq: !!float 99999

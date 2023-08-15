@@ -5,7 +5,7 @@ datasets:
     dataroot: datasets/ICCV23-LED/ELD_npy/NikonD850
     postfix: npz
     which_meta: gt
-    data_pair_list: datasets/ICCV23-LED/ELD_npy/NikonD850/NikonD850_list_1_wo_train.txt
+    data_pair_list: datasets/txtfiles/ELD/NikonD850/NikonD850_list_1_wo_train.txt
     zero_clip: false
     crop_size: ~
     load_in_mem: false
@@ -16,7 +16,7 @@ datasets:
     dataroot: datasets/ICCV23-LED/ELD_npy/NikonD850
     postfix: npz
     which_meta: gt
-    data_pair_list: datasets/ICCV23-LED/ELD_npy/NikonD850/NikonD850_list_10_wo_train.txt
+    data_pair_list: datasets/txtfiles/ELD/NikonD850/NikonD850_list_10_wo_train.txt
     zero_clip: false
     crop_size: ~
     load_in_mem: false
@@ -27,7 +27,7 @@ datasets:
     dataroot: datasets/ICCV23-LED/ELD_npy/NikonD850
     postfix: npz
     which_meta: gt
-    data_pair_list: datasets/ICCV23-LED/ELD_npy/NikonD850/NikonD850_list_100_wo_train.txt
+    data_pair_list: datasets/txtfiles/ELD/NikonD850/NikonD850_list_100_wo_train.txt
     zero_clip: false
     crop_size: ~
     load_in_mem: false
@@ -38,7 +38,7 @@ datasets:
     dataroot: datasets/ICCV23-LED/ELD_npy/NikonD850
     postfix: npz
     which_meta: gt
-    data_pair_list: datasets/ICCV23-LED/ELD_npy/NikonD850/NikonD850_list_200_wo_train.txt
+    data_pair_list: datasets/txtfiles/ELD/NikonD850/NikonD850_list_200_wo_train.txt
     zero_clip: false
     crop_size: ~
     load_in_mem: false

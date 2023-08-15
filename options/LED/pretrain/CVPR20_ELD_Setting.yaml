@@ -17,7 +17,7 @@ path:
   predefined_noise_g: pretrained/noise_g/VirtualNoisyPairGenerator_ELD_ptrqc_5VirtualCameras.pth
   strict_load_g: true
   resume_state: ~
-  CRF: datasets/ICCV23-LED/EMoR
+  CRF: datasets/EMoR
 
 val:
   illumination_correct: true

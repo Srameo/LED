@@ -33,7 +33,7 @@ path:
   predefined_noise_g: ~
   strict_load_g: true
   resume_state: ~
-  CRF: datasets/ICCV23-LED/EMoR
+  CRF: datasets/EMoR
 
 val:
   illumination_correct: true

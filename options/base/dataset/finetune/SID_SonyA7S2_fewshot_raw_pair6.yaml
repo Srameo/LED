@@ -6,7 +6,7 @@ datasets:
     dataroot: datasets/ICCV23-LED/Sony
     postfix: ~
     which_meta: gt
-    data_pair_list: datasets/ICCV23-LED/Sony_npy/fewshot_2x.txt
+    data_pair_list: datasets/txtfiles/SID/SonyA7S2/fewshot_2x.txt
     zero_clip: false
 
     use_hflip: true

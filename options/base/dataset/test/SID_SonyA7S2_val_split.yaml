@@ -5,7 +5,7 @@ datasets:
     dataroot: datasets/ICCV23-LED/Sony_npy
     postfix: npz
     which_meta: gt
-    data_pair_list: datasets/ICCV23-LED/Sony_npy/valid_100.txt
+    data_pair_list: datasets/txtfiles/SID/SonyA7S2/valid_100.txt
     zero_clip: false
     crop_size: ~
     load_in_mem: false
@@ -16,7 +16,7 @@ datasets:
     dataroot: datasets/ICCV23-LED/Sony_npy
     postfix: npz
     which_meta: gt
-    data_pair_list: datasets/ICCV23-LED/Sony_npy/valid_250.txt
+    data_pair_list: datasets/txtfiles/SID/SonyA7S2/valid_250.txt
     zero_clip: false
     crop_size: ~
     load_in_mem: false
@@ -27,7 +27,7 @@ datasets:
     dataroot: datasets/ICCV23-LED/Sony_npy
     postfix: npz
     which_meta: gt
-    data_pair_list: datasets/ICCV23-LED/Sony_npy/valid_300.txt
+    data_pair_list: datasets/txtfiles/SID/SonyA7S2/valid_300.txt
     zero_clip: false
     crop_size: ~
     load_in_mem: false

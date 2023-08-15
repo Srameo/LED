@@ -6,7 +6,7 @@ datasets:
     dataroot: datasets/ICCV23-LED/ELD/NikonD850
     postfix: ~
     which_meta: gt
-    data_pair_list: datasets/ICCV23-LED/ELD/NikonD850/NikonD850_train_list.txt
+    data_pair_list: datasets/txtfiles/ELD/NikonD850/NikonD850_train_list.txt
     zero_clip: false
 
     use_hflip: true
