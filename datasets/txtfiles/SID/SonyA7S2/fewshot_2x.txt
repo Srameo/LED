@@ -1,5 +1,5 @@
 ./short/00015_00_0.1s.ARW ./long/00015_00_10s.ARW
-./short/00063_00_0.1s.ARW ./long/00063_00_10s.ARW
+./short/00202_00_0.1s.ARW ./long/00202_00_10s.ARW
 ./short/00205_00_0.04s.ARW ./long/00205_00_10s.ARW
 ./short/00009_00_0.04s.ARW ./long/00009_00_10s.ARW
 ./short/00099_00_0.1s.ARW ./long/00099_00_30s.ARW
