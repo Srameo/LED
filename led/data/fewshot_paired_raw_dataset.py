@@ -1,5 +1,3 @@
-import re
-import rawpy
 from torch.utils import data as data
 import numpy as np
 import torch
@@ -49,6 +47,7 @@ class FewshotPairedRAWDataset(data.Dataset):
 
     @staticmethod
     def depack_meta(meta_path, to_tensor=True):
+        import rawpy
         ## using rawpy
         raw = rawpy.imread(meta_path)
         raw_vis = raw.raw_image_visible.copy()

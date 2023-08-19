@@ -1,5 +1,4 @@
 from torch.utils import data as data
-import rawpy
 import numpy as np
 import torch
 import glob
@@ -42,6 +41,7 @@ class RAWGTDataset(data.Dataset):
             ccm = np.ascontiguousarray(meta['ccm'].copy().astype('float32'))
             meta.close()
         elif postfix == None:
+            import rawpy
             ## using rawpy
             raw = rawpy.imread(meta_path)
             raw_vis = raw.raw_image_visible.copy()
