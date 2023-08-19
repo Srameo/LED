@@ -69,7 +69,7 @@ Or you can just use the following pretrained LED module for custumizing on your 
 
 ## Network for Benchmark
 
-> The models provided in this section are used to replicate the metrics in our paper, and you can find a summary of all the models on [Google Drive](https://drive.google.com/drive/folders/1UWZkeI_Aqdmy2U9vsoJyZLv33Ly__Art?usp=drive_link).
+> The models provided in this section are used to replicate the metrics in our paper, and you can find a summary of all the models on [Google Drive](https://drive.google.com/drive/folders/1UWZkeI_Aqdmy2U9vsoJyZLv33Ly__Art?usp=drive_link) or [Baidu Clould](https://pan.baidu.com/s/1fdG7zmsoyb_7j55RPHCICw?pwd=6bcz).
 >
 > Notice that, all the models are trained for bayer format.<br/>
 > `Training Strategy` determines the training strategy we use, you can find the specific method in their paper ([ELD](https://openaccess.thecvf.com/content_CVPR_2020/papers/Wei_A_Physics-Based_Noise_Formation_Model_for_Extreme_Low-Light_Raw_Denoising_CVPR_2020_paper.pdf) and [PMN](https://arxiv.org/abs/2207.06103)).<br/>
@@ -280,7 +280,7 @@ Or you can just use the following pretrained LED module for custumizing on your 
 
 > `Type` can be found in [`led/data/noise_utils/noise_generator.py`](../led/data/noise_utils/noise_generator.py).<br/>
 > `p,g,t,r,q,c` in `Noise Type` denotes shot, read (gaussian), read (tukey-lambda), row, quant noise and black level error, respectively.<br/>
-> All the noise model can be found in [Google Drive](https://drive.google.com/drive/folders/1newxmKSByfp2UyS1Hyvrtrs8UzP7WMiH?usp=drive_link).
+> All the noise model can be found in [Google Drive](https://drive.google.com/drive/folders/1newxmKSByfp2UyS1Hyvrtrs8UzP7WMiH?usp=drive_link) or [Baidu Cloud](https://pan.baidu.com/s/178PrumpQM-gb2Nfte3t4oA?pwd=t2a8).
 
 <table>
 <thead>

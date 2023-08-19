@@ -28,14 +28,14 @@
 <tbody>
   <tr>
     <td> SID </td>
-    <th> [<a href='https://cchen156.github.io/SID.html'>Homepage</a>][<a href='https://github.com/cchen156/Learning-to-See-in-the-Dark'>Github</a>][<a href='https://drive.google.com/file/d/1G6VruemZtpOyHjOC5N8Ww3ftVXOydSXx/view'>Dataset</a>] </th>
+    <th> [<a href='https://cchen156.github.io/SID.html'>Homepage</a>][<a href='https://github.com/cchen156/Learning-to-See-in-the-Dark'>Github</a>][Dataset (<a href='https://drive.google.com/file/d/1G6VruemZtpOyHjOC5N8Ww3ftVXOydSXx/view'>Google Drive</a> / <a href='https://pan.baidu.com/s/1fk8EibhBe_M1qG0ax9LQZA#list/path=%2F'>Baidu Clould</a>)] </th>
     <th> CVPR 2018 </th>
     <th> Sony A7S2 </th>
     <th> Bayer (RGGB) </th>
   </tr>
   <tr>
     <td> ELD </td>
-    <th> [<a href='https://github.com/Vandermode/ELD'>Github</a>][<a href='https://drive.google.com/drive/folders/1QoEhB1P-hNzAc4cRb7RdzyEKktexPVgy'>Google Drive</a>][<a href='https://drive.google.com/file/d/13Ge6-FY9RMPrvGiPvw7O4KS3LNfUXqEX/view?usp=drive_link'>Dataset</a>] </th>
+    <th> [<a href='https://github.com/Vandermode/ELD'>Github</a>][<a href='https://drive.google.com/drive/folders/1QoEhB1P-hNzAc4cRb7RdzyEKktexPVgy'>Google Drive</a>][Dataset (<a href='https://drive.google.com/file/d/13Ge6-FY9RMPrvGiPvw7O4KS3LNfUXqEX/view?usp=drive_link'>Google Drive</a> / <a href='https://pan.baidu.com/share/init?surl=1ksugpPH5uyDL-Z6S71Q5g?pwd=0lby'>Baidu Clould</a>)] </th>
     <th> CVPR 2020 </th>
     <th> Sony A7S2 / Nikon D850 / Canon EOS70D / Canon EOS700D </th>
     <th> Bayer </th>
@@ -109,7 +109,7 @@ python scripts/data_preparation/bayer_to_npy.py --data-path datasets/ICCV23-LED/
 
 Like SID, we use txt files to identify the images for training or testing.<br/>
 To evalute or train LED using our proposed code, you should download the corresponding txt file and put them in the right place. Or change the `data_pair_list` property in `dataset:train:dataroot` option.
-
+<!--
 <table>
 <thead>
   <tr>
@@ -152,13 +152,13 @@ To evalute or train LED using our proposed code, you should download the corresp
   </tr>
 </tbody>
 </table>
-
+ -->
 
 ### Visualization
 
 > Since commit [`fadffc7`](https://github.com/Srameo/LED/commit/fadffc7282b02ab2fcc7fbade65f87217b642588), the EMoR data for fast visualization has been added in [datasets/EMoR](../datasets/EMoR).
 
-Download the EMoR files calibrated by [ELD](https://github.com/Vandermode/ELD) in [Google Drive](https://drive.google.com/drive/folders/1U6W-qXqnZl-5-dLpFhLAGLjniBH5yAYY?usp=drive_link) for fast visualization using GPU.
+Download the EMoR files calibrated by [ELD](https://github.com/Vandermode/ELD) in [Google Drive](https://drive.google.com/drive/folders/1U6W-qXqnZl-5-dLpFhLAGLjniBH5yAYY?usp=drive_link) or [Baidu Clould](https://pan.baidu.com/s/1YW5yPTloDawasTrWlUWw0Q?pwd=y83f) for fast visualization using GPU.
 
 
 ## Pretrained Models

@@ -12,7 +12,7 @@ This repository contains the official implementation of the following paper:
 
 \[[Homepage](https://srameo.github.io/projects/led-iccv23/)\]
 \[[Paper](https://arxiv.org/abs/2308.03448)]
-\[[Google Drive](https://drive.google.com/drive/folders/11MYkjzbPIZ7mJbu9vrgaVC-OwGcOFKsM?usp=sharing)]
+\[[Google Drive](https://drive.google.com/drive/folders/11MYkjzbPIZ7mJbu9vrgaVC-OwGcOFKsM?usp=sharing) / [Baidu Clould](https://pan.baidu.com/s/17rA_8GvfNPZJY5Zl9dyILw?pwd=iay5)]
 \[[知乎](https://zhuanlan.zhihu.com/p/648242095)\]
 \[Poster (TBD)\]
 \[Video (TBD)\]
@@ -45,7 +45,8 @@ Achieveing <b style='font-size: large'>SOTA performance</b> in <b style='font-si
 
 > Future work can be found in [todo.md](docs/todo.md).
 
-- **Aug, 15, 2023**: For faster benchmark, we released the relevant files in commit [`fadffc7`](https://github.com/Srameo/LED/commit/fadffc7282b02ab2fcc7fbade65f87217b642588).
+- **Aug 19, 2023**: Release relevent files on [Baidu Clould](https://pan.baidu.com/s/17rA_8GvfNPZJY5Zl9dyILw?pwd=iay5).
+- **Aug 15, 2023**: For faster benchmark, we released the relevant files in commit [`fadffc7`](https://github.com/Srameo/LED/commit/fadffc7282b02ab2fcc7fbade65f87217b642588).
 - **Aug, 2023**: We released a Chinese explanation of our paper on [知乎](https://zhuanlan.zhihu.com/p/648242095).
 - **Aug, 2023**: Our code is publicly available!
 - **July, 2023**: Our paper "Lighting Every Darkness in Two Pairs: A Calibration-Free Pipeline for RAW Denoising" has been accepted by ICCV 2023.
