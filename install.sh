@@ -20,6 +20,7 @@ unzip downloads/LibRaw-0.19.1.zip -d downloads/
 cd downloads/LibRaw-0.19.1
 ./configure
 make
+sudo make install
 
 # setting rawpy
 cd ../rawpy
