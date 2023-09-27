@@ -14,8 +14,9 @@ This repository contains the official implementation of the following paper:
 \[[Paper](https://arxiv.org/abs/2308.03448)]
 \[[Google Drive](https://drive.google.com/drive/folders/11MYkjzbPIZ7mJbu9vrgaVC-OwGcOFKsM?usp=sharing) / [Baidu Clould](https://pan.baidu.com/s/17rA_8GvfNPZJY5Zl9dyILw?pwd=iay5)]
 \[[知乎](https://zhuanlan.zhihu.com/p/648242095)\]
-\[Poster (TBD)\]
-\[Video (TBD)\]
+\[[Poster](https://github.com/Srameo/LED/files/12733867/iccv23_poster.pdf)\]
+\[[Slides](https://srameo.github.io/projects/led-iccv23/assets/slides/iccv23_slides_en.pdf)\]
+\[[Video](https://youtu.be/Jo8OTAnUYkU)\]
 
 <details>
 <summary>Comparaison with Calibration-Based Method</summary>
