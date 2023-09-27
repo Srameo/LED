@@ -46,6 +46,7 @@ Achieveing <b style='font-size: large'>SOTA performance</b> in <b style='font-si
 
 > Future work can be found in [todo.md](docs/todo.md).
 
+- **Sep 27, 2023**: Add the urls to our [Poster](https://github.com/Srameo/LED/files/12733867/iccv23_poster.pdf), [Slides](https://srameo.github.io/projects/led-iccv23/assets/slides/iccv23_slides_en.pdf) and [Video](https://youtu.be/Jo8OTAnUYkU).
 - **Aug 19, 2023**: Release relevent files on [Baidu Clould](https://pan.baidu.com/s/17rA_8GvfNPZJY5Zl9dyILw?pwd=iay5).
 - **Aug 15, 2023**: For faster benchmark, we released the relevant files in commit [`fadffc7`](https://github.com/Srameo/LED/commit/fadffc7282b02ab2fcc7fbade65f87217b642588).
 - **Aug, 2023**: We released a Chinese explanation of our paper on [知乎](https://zhuanlan.zhihu.com/p/648242095).
