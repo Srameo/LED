@@ -162,6 +162,8 @@ optional arguments:
 
 ### Fine-tune for Your Own Camera!
 
+> A detailed doc can be found in [issue#8](https://github.com/Srameo/LED/issues/8).
+
 1. Collect noisy-clean image pairs for your camera model, please follow the insruction in [demo.md](docs/demo.md).
 2. Select a **LED Pretrained** model in our [model zoo](docs/pretrained-models.md) (based on the additional dgain you want to add on the image), and fine-tune it using your data!
    ```bash
