@@ -46,6 +46,7 @@ Achieveing <b style='font-size: large'>SOTA performance</b> in <b style='font-si
 
 > Future work can be found in [todo.md](docs/todo.md).
 
+- **Dec 1, 2023**: Add the related code for noise model calibration in [PR#14](https://github.com/Srameo/LED/pull/14), thanks for [@HYX20011209](https://github.com/HYX20011209).
 - **Sep 27, 2023**: Add the urls to our [Poster](https://github.com/Srameo/LED/files/12733867/iccv23_poster.pdf), [Slides](https://srameo.github.io/projects/led-iccv23/assets/slides/iccv23_slides_en.pdf) and [Video](https://youtu.be/Jo8OTAnUYkU).
 - **Aug 19, 2023**: Release relevent files on [Baidu Clould](https://pan.baidu.com/s/17rA_8GvfNPZJY5Zl9dyILw?pwd=iay5).
 - **Aug 15, 2023**: For faster benchmark, we released the relevant files in commit [`fadffc7`](https://github.com/Srameo/LED/commit/fadffc7282b02ab2fcc7fbade65f87217b642588).
@@ -215,8 +216,8 @@ For commercial licensing, please contact `cmm[AT]nankai.edu.cn`.
 This repository borrows heavily from [BasicSR](https://github.com/XPixelGroup/BasicSR), [Learning-to-See-in-the-Dark](https://github.com/cchen156/Learning-to-See-in-the-Dark) and [ELD](https://github.com/Vandermode/ELD).<br/>
 We would like to extend heartfelt gratitude to [Ms. Li Xinru](https://issuu.com/lerryn) for crafting the exquisite logo for our project.
 
-<!-- We also thank all of our contributors.
+We also thank all of our contributors.
 
 <a href="https://github.com/Srameo/LED/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=Srameo/LED" />
-</a> -->
+</a>
