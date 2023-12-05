@@ -20,6 +20,9 @@ This repository contains the official implementation of the following paper:
 
 <details>
 <summary>Comparaison with Calibration-Based Method</summary>
+  
+Some brief introduction on the process of calibration in [<a href='https://github.com/Srameo/LED/blob/main/docs/calib_en.md'>EN</a>/<a href='https://github.com/Srameo/LED/blob/main/docs/calib_cn.md'>CN</a>].
+
 <img src='https://github.com/Srameo/LED/assets/51229295/022505b0-8ff0-445b-ab1f-bb79b48ecdbd' alt='ICCV23_LED_TEASER0' width='500px'/>
 </details>
 
@@ -46,7 +49,8 @@ Achieveing <b style='font-size: large'>SOTA performance</b> in <b style='font-si
 
 > Future work can be found in [todo.md](docs/todo.md).
 
-- **Dec 1, 2023**: Add the related code for noise model calibration in [PR#14](https://github.com/Srameo/LED/pull/14), thanks for [@HYX20011209](https://github.com/HYX20011209).
+- **Dec 5, 2023**: Add the related docs[<a href='https://github.com/Srameo/LED/blob/main/docs/calib_en.md'>EN</a>/<a href='https://github.com/Srameo/LED/blob/main/docs/calib_cn.md'>CN</a>] on the process of noise model calibration in [PR#16](https://github.com/Srameo/LED/pull/16), thanks a lot to [@HYX20011209](https://github.com/HYX20011209).
+- **Dec 1, 2023**: Add the related code for noise model calibration in [PR#14](https://github.com/Srameo/LED/pull/14), thanks to [@HYX20011209](https://github.com/HYX20011209).
 - **Sep 27, 2023**: Add the urls to our [Poster](https://github.com/Srameo/LED/files/12733867/iccv23_poster.pdf), [Slides](https://srameo.github.io/projects/led-iccv23/assets/slides/iccv23_slides_en.pdf) and [Video](https://youtu.be/Jo8OTAnUYkU).
 - **Aug 19, 2023**: Release relevent files on [Baidu Clould](https://pan.baidu.com/s/17rA_8GvfNPZJY5Zl9dyILw?pwd=iay5).
 - **Aug 15, 2023**: For faster benchmark, we released the relevant files in commit [`fadffc7`](https://github.com/Srameo/LED/commit/fadffc7282b02ab2fcc7fbade65f87217b642588).
