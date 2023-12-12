@@ -1,3 +1,6 @@
+# exit on error
+set -e
+
 # setting conda hook
 eval "$(conda shell.bash hook)"
 # create env
