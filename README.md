@@ -4,14 +4,21 @@
 
 # :bulb: LED: Lighting Every Darkness in Two Pairs!
 
-This repository contains the official implementation of the following paper:
+This repository contains the official implementation of the following papers:
 > Lighting Every Darkness in Two Pairs: A Calibration-Free Pipeline for RAW Denoising<br/>
 > [Xin Jin](https://srameo.github.io)<sup>\*</sup>, [Jia-Wen Xiao](https://github.com/schuy1er)<sup>\*</sup>, [Ling-Hao Han](https://scholar.google.com/citations?user=0ooNdgUAAAAJ&hl=en), [Chunle Guo](https://mmcheng.net/clguo/)<sup>\#</sup>, [Ruixun Zhang](https://www.math.pku.edu.cn/teachers/ZhangRuixun%20/index.html), [Xialei Liu](https://mmcheng.net/xliu/), [Chongyi Li](https://li-chongyi.github.io/)<br/>
-> (\* denotes equal contribution.)<br/>
+> (\* denotes equal contribution. \# denotes the corresponding author.)<br/>
 > In ICCV 2023
 
-\[[Homepage](https://srameo.github.io/projects/led-iccv23/)\]
-\[[Paper](https://arxiv.org/abs/2308.03448)]
+
+> Make Explicit Calibration Implicit: Calibrate Denoiser Instead of the Noise Model<br/>
+> [Xin Jin](https://srameo.github.io), [Jia-Wen Xiao](https://github.com/schuy1er), [Ling-Hao Han](https://scholar.google.com/citations?user=0ooNdgUAAAAJ&hl=en), [Chunle Guo](https://mmcheng.net/clguo/)<sup>\#</sup>, [Xialei Liu](https://mmcheng.net/xliu/), [Chongyi Li](https://li-chongyi.github.io/), [Ming-Ming Cheng](https://mmcheng.net/cmm/)<sup>\#</sup><br/>
+> (\# denotes corresponding authors.)<br/>
+> Arxiv preprint
+
+
+\[[Homepage](https://srameo.github.io/projects/led-extension/) (or [Ver. ICCV](https://srameo.github.io/projects/led-iccv23/))\]
+\[[Paper](https://arxiv.org/abs/2308.03448v2) (or [Ver. ICCV](https://arxiv.org/abs/2308.03448v1))]
 \[[Google Drive](https://drive.google.com/drive/folders/11MYkjzbPIZ7mJbu9vrgaVC-OwGcOFKsM?usp=sharing) / [Baidu Clould](https://pan.baidu.com/s/17rA_8GvfNPZJY5Zl9dyILw?pwd=iay5)]
 \[[知乎](https://zhuanlan.zhihu.com/p/648242095)\]
 \[[Poster](https://github.com/Srameo/LED/files/12733867/iccv23_poster.pdf)\]
@@ -20,7 +27,7 @@ This repository contains the official implementation of the following paper:
 
 <details>
 <summary>Comparaison with Calibration-Based Method</summary>
-  
+
 Some brief introduction on the process of calibration in [<a href='https://github.com/Srameo/LED/blob/main/docs/calib_en.md'>EN</a>/<a href='https://github.com/Srameo/LED/blob/main/docs/calib_cn.md'>CN</a>].
 
 <img src='https://github.com/Srameo/LED/assets/51229295/022505b0-8ff0-445b-ab1f-bb79b48ecdbd' alt='ICCV23_LED_TEASER0' width='500px'/>
@@ -49,14 +56,21 @@ Achieveing <b style='font-size: large'>SOTA performance</b> in <b style='font-si
 
 > Future work can be found in [todo.md](docs/todo.md).
 
-- **Dec 5, 2023**: Add the related docs[<a href='https://github.com/Srameo/LED/blob/main/docs/calib_en.md'>EN</a>/<a href='https://github.com/Srameo/LED/blob/main/docs/calib_cn.md'>CN</a>] on the process of noise model calibration in [PR#16](https://github.com/Srameo/LED/pull/16), thanks a lot to [@HYX20011209](https://github.com/HYX20011209).
-- **Dec 1, 2023**: Add the related code for noise model calibration in [PR#14](https://github.com/Srameo/LED/pull/14), thanks to [@HYX20011209](https://github.com/HYX20011209).
-- **Sep 27, 2023**: Add the urls to our [Poster](https://github.com/Srameo/LED/files/12733867/iccv23_poster.pdf), [Slides](https://srameo.github.io/projects/led-iccv23/assets/slides/iccv23_slides_en.pdf) and [Video](https://youtu.be/Jo8OTAnUYkU).
-- **Aug 19, 2023**: Release relevent files on [Baidu Clould](https://pan.baidu.com/s/17rA_8GvfNPZJY5Zl9dyILw?pwd=iay5).
-- **Aug 15, 2023**: For faster benchmark, we released the relevant files in commit [`fadffc7`](https://github.com/Srameo/LED/commit/fadffc7282b02ab2fcc7fbade65f87217b642588).
-- **Aug, 2023**: We released a Chinese explanation of our paper on [知乎](https://zhuanlan.zhihu.com/p/648242095).
-- **Aug, 2023**: Our code is publicly available!
-- **July, 2023**: Our paper "Lighting Every Darkness in Two Pairs: A Calibration-Free Pipeline for RAW Denoising" has been accepted by ICCV 2023.
+<ul>
+  <li><b>Dec 27, 2023</b>: Update an extension version of our ICCV 23 paper (<a href="https://srameo.github.io/projects/led-extension/">Project Page</a>/<a href="https://arxiv.org/abs/2308.03448v2">Paper</a>).</li>
+  <li><b>Dec 1-5, 2023</b>: Add the related code/doc[<a href='https://github.com/Srameo/LED/blob/main/docs/calib_en.md'>EN</a>/<a href='https://github.com/Srameo/LED/blob/main/docs/calib_cn.md'>CN</a>] from <a href="https://github.com/Srameo/LED/pull/14">PR#14</a>/<a href="https://github.com/Srameo/LED/pull/16">PR#16</a>, thanks to @<a href="https://github.com/HYX20011209">HYX20011209</a></li>
+  <li><b>Sep 27, 2023</b>: Add the urls to our <a href="https://github.com/Srameo/LED/files/12733867/iccv23_poster.pdf">Poster</a>, <a href="https://srameo.github.io/projects/led-iccv23/assets/slides/iccv23_slides_en.pdf">Slides</a>, and <a href="https://youtu.be/Jo8OTAnUYkU">Video</a>.</li>
+  <li><b>Aug 19, 2023</b>: Release relevent files on <a href="https://pan.baidu.com/s/17rA_8GvfNPZJY5Zl9dyILw?pwd=iay5">Baidu Clould</a>(pwd: iay5).</li>
+  <li><b>Aug 15, 2023</b>: For faster benchmark, we released the relevant files in commit <a href="https://github.com/Srameo/LED/commit/fadffc7282b02ab2fcc7fbade65f87217b642588"><code>fadffc7</code></a>.</li>
+</ul>
+<details>
+  <summary>History</summary>
+  <ul>
+    <li><b>Aug, 2023</b>: We released a Chinese explanation of our paper on <a href="https://zhuanlan.zhihu.com/p/648242095">知乎</a>.</li>
+    <li><b>Aug, 2023</b>: Our code is publicly available!</li>
+    <li><b>July, 2023</b>: Our paper "Lighting Every Darkness in Two Pairs: A Calibration-Free Pipeline for RAW Denoising" has been accepted by ICCV 2023.</li>
+  </ul>
+</details>
 
 
 ## :wrench: Dependencies and Installation
@@ -201,6 +215,13 @@ If you find our repo useful for your research, please consider citing our paper:
     author={Jin, Xin and Xiao, Jia-Wen and Han, Ling-Hao and Guo, Chunle and Zhang, Ruixun and Liu, Xialei and Li, Chongyi},
     journal={Proceedings of the IEEE/CVF International Conference on Computer Vision},
     year={2023}
+}
+
+@inproceedings{jin2023make,
+  title={Make Explict Calibration Implicit: "Calibrate" Denoiser Instead of The Noise Model},
+  author={Jin, Xin and Xiao, Jia-Wen and Han, Ling-Hao and Guo, Chunle and Liu, Xialei and Li, Chongyi and Cheng, Ming-Ming},
+  journal={Arxiv},
+  year={2023}
 }
 ```
 
