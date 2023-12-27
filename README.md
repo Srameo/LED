@@ -1,6 +1,14 @@
 <p align="center">
-  <img src='.assets/logo.svg' alt='ICCV23_LED_LOGO' width='200px'/>
+  <img src='.assets/logo.svg' alt='ICCV23_LED_LOGO' width='200px'/><br/>
+  [<a href="https://srameo.github.io/projects/led-extension/">Homepage</a> (or <a href="https://srameo.github.io/projects/led-iccv23/">Ver. ICCV</a>)]
+  [<a href="https://arxiv.org/abs/2308.03448v2">Paper</a> (or <a href="https://arxiv.org/abs/2308.03448v1">Ver. ICCV</a>)]
+  [<a href="https://drive.google.com/drive/folders/11MYkjzbPIZ7mJbu9vrgaVC-OwGcOFKsM?usp=sharing">Google Drive</a> / <a href="https://pan.baidu.com/s/17rA_8GvfNPZJY5Zl9dyILw?pwd=iay5">Baidu Cloud</a>]
+  [<a href="https://zhuanlan.zhihu.com/p/648242095">知乎</a>]
+  [<a href="https://github.com/Srameo/LED/files/12733867/iccv23_poster.pdf">Poster</a>]
+  [<a href="https://srameo.github.io/projects/led-iccv23/assets/slides/iccv23_slides_en.pdf">Slides</a>]
+  [<a href="https://youtu.be/Jo8OTAnUYkU">Video</a>]
 </p>
+<br/>
 
 # :bulb: LED: Lighting Every Darkness in Two Pairs!
 
@@ -15,15 +23,6 @@ This repository contains the official implementation of the following papers:
 > [Xin Jin](https://srameo.github.io), [Jia-Wen Xiao](https://github.com/schuy1er), [Ling-Hao Han](https://scholar.google.com/citations?user=0ooNdgUAAAAJ&hl=en), [Chunle Guo](https://mmcheng.net/clguo/)<sup>\#</sup>, [Xialei Liu](https://mmcheng.net/xliu/), [Chongyi Li](https://li-chongyi.github.io/), [Ming-Ming Cheng](https://mmcheng.net/cmm/)<sup>\#</sup><br/>
 > (\# denotes corresponding authors.)<br/>
 > Arxiv preprint
-
-
-\[[Homepage](https://srameo.github.io/projects/led-extension/) (or [Ver. ICCV](https://srameo.github.io/projects/led-iccv23/))\]
-\[[Paper](https://arxiv.org/abs/2308.03448v2) (or [Ver. ICCV](https://arxiv.org/abs/2308.03448v1))]
-\[[Google Drive](https://drive.google.com/drive/folders/11MYkjzbPIZ7mJbu9vrgaVC-OwGcOFKsM?usp=sharing) / [Baidu Clould](https://pan.baidu.com/s/17rA_8GvfNPZJY5Zl9dyILw?pwd=iay5)]
-\[[知乎](https://zhuanlan.zhihu.com/p/648242095)\]
-\[[Poster](https://github.com/Srameo/LED/files/12733867/iccv23_poster.pdf)\]
-\[[Slides](https://srameo.github.io/projects/led-iccv23/assets/slides/iccv23_slides_en.pdf)\]
-\[[Video](https://youtu.be/Jo8OTAnUYkU)\]
 
 <details>
 <summary>Comparaison with Calibration-Based Method</summary>
