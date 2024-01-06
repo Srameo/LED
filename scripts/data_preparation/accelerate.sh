@@ -7,7 +7,7 @@ python scripts/data_preparation/extract_bayer_subimages_with_metadata.py \
 
 # Convert the ELD data into SID data structure
 python scripts/data_preparation/eld_to_sid_structure.py \
-    --data-path datasets/ICCV23-LED/ELD_sym
+    --data-path datasets/ICCV23-LED/ELD_sym \
     --save-path datasets/ICCV23-LED/ELD
 
 # convert SID SonyA7S2

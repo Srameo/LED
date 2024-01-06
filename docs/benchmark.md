@@ -81,7 +81,7 @@ First, we convert the ELD data into SID data structure for use the same `dataset
 ```bash
 # Convert the ELD data into SID data structure
 python scripts/data_preparation/eld_to_sid_structure.py \
-    --data-path datasets/ICCV23-LED/ELD_sym
+    --data-path datasets/ICCV23-LED/ELD_sym \
     --save-path datasets/ICCV23-LED/ELD
 ```
 
@@ -184,13 +184,13 @@ python scripts/benckmark.py \
     -p [PRETRAINED_NET] \
     --dataset [DATASET] [CAMERA_MODEL] \
     [--led] \         # If the model is fine-tuned and deployed by our LED method.
-    [--save_image] \  # If you would like to save the result
+    [--save_img]      # If you would like to save the result
 
 # e.g.
 python scripts/benckmark.py \
     -t test \
     -p pretrained/network_g/LED_Deploy_SID_SonyA7S2_CVPR20_Setting_Ratio100-300.pth \
     --dataset SID SonyA7S2 \
-    --led --save_image
+    --led --save_img
 # the log and visualization can be found in `results/test`
 ```
