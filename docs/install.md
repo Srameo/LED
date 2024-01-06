@@ -36,22 +36,23 @@ We heavily recommend you follow the instructions from [ELD](https://github.com/V
    # download in downloads/
    mkdir -p downloads/
    # use our script for downloading from google drive
-   python scripts/download_gdrive.py --id 1B4gJYe3h4UxWTMZzNL2xVodSDUlNbeAR --save-path downloads/LibRaw-0.19.1.zip
+   wget https://www.libraw.org/data/LibRaw-0.21.1.zip -O downloads/LibRaw-0.21.1.zip
    python scripts/download_gdrive.py --id 1EuJsbZ_a_YJHHcGAVA9TXXPnGU90QoP4 --save-path downloads/rawpy.zip
    # unzip the rawpy and LibRaw
-   unzip downloads/LibRaw-0.19.1.zip -d downloads/
+   unzip downloads/LibRaw-0.21.1.zip -d downloads/
    unzip downloads/rawpy.zip -d downloads/
    ```
 2. Compile and install LibRaw:
    ```bash
-   cd downloads/LibRaw-0.19.1
+   cd downloads/LibRaw-0.21.1
    ./configure
    make
+   sudo make install
    ```
 3. Install RawPy! (Please pay attention to whether you are in a virtual environment):
    ```bash
    cd ../rawpy
-   pip install -e .
+   RAWPY_USE_SYSTEM_LIBRAW=1 pip install -e .
    ```
 
 All the above instructions are integrated into install.sh.<br/>
