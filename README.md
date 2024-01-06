@@ -6,7 +6,7 @@
 
 <div align="center">
 
-:newspaper:[**News**](#newspaper-news) | :wrench:[**Install**](#wrench-dependencies-and-installation) | :sparkles:[**Models Zoo**](#sparkles-pretrained-models) | :camera:[**Quick Demo**](#camera-quick-demo) | :robot:[**Train and Eval**](docs/benchmark.md) | :construction:[**Contribute**](docs/develop.md) | :scroll:[**License**](#scroll-license) | :question:[**FAQ**](https://github.com/Srameo/LED/labels/FAQ) | :postbox:[**Contact**](#postbox-contact)
+:newspaper:[**News**](#newspaper-news) | :wrench:[**Install**](#wrench-dependencies-and-installation) | :sparkles:[**Models Zoo**](#sparkles-pretrained-models) | :camera:[**Quick Demo**](#camera-quick-demo) | :robot:[**Benchmark**](docs/benchmark.md) | :construction:[**Contribute**](docs/develop.md) | :scroll:[**License**](#scroll-license) | :question:[**FAQ**](https://github.com/Srameo/LED/labels/FAQ)
 
 </div>
 
