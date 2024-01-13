@@ -1,0 +1,8 @@
+# network structures
+network_g:
+  type: NAFNet
+  img_channel: 4
+  width: 32
+  enc_blk_nums: [2, 2, 2, 2]
+  middle_blk_num: 2
+  dec_blk_nums: [2, 2, 2, 2]

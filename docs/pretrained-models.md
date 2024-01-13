@@ -65,6 +65,30 @@ Or you can just use the following pretrained LED module for custumizing on your 
     <th> [<a href="https://drive.google.com/file/d/1IzOkJuHWQVXmkzFJzQ9-gkPXBlrutO2p/view?usp=drive_link">Google Drive</a>] </th>
     <th> [<a href="/options/LED/pretrain/CVPR20_ELD_Setting_Ratio1-200.yaml">options/LED/pretrain/CVPR20_ELD_Setting_Ratio1-200.yaml</a>] </th>
   </tr>
+  <tr>
+    <td>LED</td>
+    <th> ELD (5 Virtual Cameras) </th>
+    <th> Pretrain </th>
+    <th> Restormer </th>
+    <th> ELD </th>
+    <th> 100-300 </th>
+    <th> - </th>
+    <th> - </th>
+    <th> [<a href="https://drive.google.com/file/d/1iKNLaNRH5UejstaZbuq83yAdYxLaPa4x/view?usp=drive_link">Google Drive</a>] </th>
+    <th> [<a href="/options/LED/other_arch/Restormer/LED+Restormer_Pretrain.yaml">options/LED/other_arch/Restormer/LED+Restormer_Pretrain.yaml</a>] </th>
+  </tr>
+  <tr>
+    <td>LED</td>
+    <th> ELD (5 Virtual Cameras) </th>
+    <th> Pretrain </th>
+    <th> NAFNet </th>
+    <th> ELD </th>
+    <th> 100-300 </th>
+    <th> - </th>
+    <th> - </th>
+    <th> [<a href="https://drive.google.com/file/d/1FmqGv_YICLX4Gc-aWzvcTl8aWgeJ5cEB/view?usp=drive_link">Google Drive</a>] </th>
+    <th> [<a href="/options/LED/other_arch/NAFNet/LED+NAFNet_Pretrain.yaml">options/LED/other_arch/NAFNet/LED+NAFNet_Pretrain.yaml</a>] </th>
+  </tr>
 </table>
 
 ## Network for Benchmark
@@ -150,6 +174,30 @@ Or you can just use the following pretrained LED module for custumizing on your 
     <th> SID SonyA7S2 </th>
     <th> [<a href="https://drive.google.com/file/d/1vmeJBdXSjecnbTXLrMHOIhLgJbMFRaA1/view?usp=drive_link">Google Drive</a>] </th>
     <th> [<a href="/options/LED/finetune/SID_SonyA7S2_CVPR20_ELD_Setting.yaml">options/LED/finetune/SID_SonyA7S2_CVPR20_ELD_Setting.yaml</a>] </th>
+  </tr>
+  <tr>
+    <td>LED</td>
+    <th> Real Noise (6 Pairs on SID SonyA7S2) </th>
+    <th> Finetune / Deploy </th>
+    <th> Restormer </th>
+    <th> ELD* </th>
+    <th> 100-300 </th>
+    <th> SonyA7S2 </th>
+    <th> SID SonyA7S2 </th>
+    <th> [<a href="https://drive.google.com/file/d/1KqY15BeXwjlwXGU5mEywBv3A2nbso7UL/view?usp=drive_link">Google Drive</a>] </th>
+    <th> [<a href="/options/LED/other_arch/Restormer/LED+Restormer_Finetune.yaml">options/LED/other_arch/Restormer/LED+Restormer_Finetune.yaml</a>] </th>
+  </tr>
+  <tr>
+    <td>LED</td>
+    <th> Real Noise (6 Pairs on SID SonyA7S2) </th>
+    <th> Finetune / Deploy </th>
+    <th> NAFNet </th>
+    <th> ELD* </th>
+    <th> 100-300 </th>
+    <th> SonyA7S2 </th>
+    <th> SID SonyA7S2 </th>
+    <th> [<a href="https://drive.google.com/file/d/11bgv3cD02ea0SU8mkL_W1UCNaH_FDbSS/view?usp=drive_link">Google Drive</a>] </th>
+    <th> [<a href="/options/LED/other_arch/NAFNet/LED+NAFNet_Finetune.yaml">options/LED/other_arch/NAFNet/LED+NAFNet_Finetune.yaml</a>] </th>
   </tr>
   <tr>
     <td>LED</td>

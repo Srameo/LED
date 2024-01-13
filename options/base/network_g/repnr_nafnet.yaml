@@ -1,0 +1,19 @@
+repnr_opt:
+  dont_convert_module:
+    - 'ending'
+    - 'dwconv2'
+    - 'downconv'
+    - 'upconv'
+  branch_num: 5
+  align_opts:
+    init_weight: 1.0
+    init_bias: 0.0
+
+# network structures
+network_g:
+  type: NAFNet
+  img_channel: 4
+  width: 32
+  enc_blk_nums: [2, 2, 2, 2]
+  middle_blk_num: 2
+  dec_blk_nums: [2, 2, 2, 2]

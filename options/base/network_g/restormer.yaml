@@ -1,0 +1,8 @@
+# network structures
+network_g:
+  type: Restormer
+  inp_channels: 4
+  out_channels: 4
+  dim: 32
+  num_blocks: [2,2,2,2]
+  num_refinement_blocks: 1

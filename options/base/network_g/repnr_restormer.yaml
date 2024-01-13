@@ -1,0 +1,18 @@
+repnr_opt:
+  dont_convert_module:
+    - 'output'
+    - 'dwconv'
+    - 'qkv_dwconv'
+  branch_num: 5
+  align_opts:
+    init_weight: 1.0
+    init_bias: 0.0
+
+# network structures
+network_g:
+  type: Restormer
+  inp_channels: 4
+  out_channels: 4
+  dim: 32
+  num_blocks: [2,2,2,2]
+  num_refinement_blocks: 1

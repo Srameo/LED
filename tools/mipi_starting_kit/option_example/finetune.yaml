@@ -1,0 +1,45 @@
+base:
+- options/base/network_g/repnr_nafnet.yaml  # network_g
+- options/base/finetune/CVPR20_ELD.yaml     # train
+- options/base/val_and_logger.yaml          # val + logger
+
+name: LED+NAFNet_Finetune_MIPI_Camera1_CVPR20_ELD_Setting
+model_type: LEDFinetuneModel
+scale: 1
+num_gpu: 1
+manual_seed: 2022
+
+# dataset and data loader settings
+datasets:
+  train:
+    name: MIPICamera1
+    type: MIPIDataset
+    dataroot: datasets/MIPI@2024/Camera1
+    postfix: ~
+    which_meta: gt
+    data_pair_list: datasets/MIPI@2024/Camera1/train.txt
+    zero_clip: false
+
+    use_hflip: true
+    use_rot: true
+    crop_size: 1024
+    load_in_mem: true
+
+# add oomn conv for finetuning
+repnr_opt:
+  aux_conv_opts:
+    bias: true
+    init: zero_init_
+
+path:
+  pretrain_network_g: pretrained/network_g/LED+NAFNet_Pretrain_None_None_CVPR20_Setting_Ratio100-300.pth
+  strict_load_g: false
+  resume_state: ~
+  CRF: datasets/EMoR
+
+val:
+  val_freq: !!float 99999
+  illumination_correct: true
+
+logger:
+  save_checkpoint_freq: !!float 99999

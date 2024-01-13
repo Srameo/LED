@@ -1,0 +1,31 @@
+base:
+- options/base/dataset/finetune/ELD_SonyA7S2_fewshot_raw_pair24.yaml # train dataset
+- options/base/dataset/test/ELD_SonyA7S2_val_split.yaml              # test dataset
+- options/base/network_g/repnr_nafnet.yaml                           # network_g
+- options/base/finetune/CVPR20_ELD.yaml                              # train
+- options/base/val_and_logger.yaml                                   # val + logger
+
+name: LED+NAFNet_Finetune_ELD_SonyA7S2_CVPR20_ELD_Setting
+model_type: LEDFinetuneModel
+scale: 1
+num_gpu: 1
+manual_seed: 2022
+
+# add oomn conv for finetuning
+repnr_opt:
+  aux_conv_opts:
+    bias: true
+    init: zero_init_
+
+path:
+  pretrain_network_g: pretrained/network_g/LED+NAFNet_Pretrain_None_None_CVPR20_Setting_Ratio100-300.pth
+  strict_load_g: false
+  resume_state: ~
+  CRF: datasets/EMoR
+
+val:
+  val_freq: !!float 99999
+  illumination_correct: true
+
+logger:
+  save_checkpoint_freq: !!float 99999

@@ -1,5 +1,7 @@
+# <div align="center"> Let's Prepare for <a href="https://mipi-challenge.org/MIPI2024/">MIPI@2024</a>! \[<a href="/tools/mipi_starting_kit">Starting-Kit</a>\] </div>
+
 <p align="center">
-  <img src='.assets/logo.svg' alt='ICCV23_LED_LOGO' width='200px'/><br/>
+  <img src='.assets/logo-mipi.svg' alt='ICCV23_LED_LOGO' width='200px'/><br/>
 </p>
 
 ## <div align="center"><a href="https://srameo.github.io/projects/led-extension/">Homepage</a> | <a href="https://arxiv.org/abs/2308.03448v2">Paper</a> | <a href="https://drive.google.com/drive/folders/11MYkjzbPIZ7mJbu9vrgaVC-OwGcOFKsM?usp=sharing">Google Drive</a> | <a href="https://pan.baidu.com/s/17rA_8GvfNPZJY5Zl9dyILw?pwd=iay5">Baidu Cloud</a> | <a href="https://zhuanlan.zhihu.com/p/648242095">知乎</a> | <a href="https://github.com/Srameo/LED/files/12733867/iccv23_poster.pdf">Poster</a> | <a href="https://srameo.github.io/projects/led-iccv23/assets/slides/iccv23_slides_en.pdf">Slides</a> | <a href="https://youtu.be/Jo8OTAnUYkU">Video</a> </div>
@@ -55,15 +57,16 @@ Achieveing <b style='font-size: large'>SOTA performance</b> in <b style='font-si
 > Future work can be found in [todo.md](docs/todo.md).
 
 <ul>
+  <li><b>Jan 13, 2024</b>: Release the <a href="/tools/mipi_starting_kit">starting-kit</a> for <a href="https://mipi-challenge.org/MIPI2024/">MIPI@2024</a>. Additionally, we release the pre-trained parameters of Restormer and NAFNet.</li>
   <li><b>Dec 27, 2023</b>: Update an extension version of our ICCV 23 paper (<a href="https://srameo.github.io/projects/led-extension/">Project Page</a>/<a href="https://arxiv.org/abs/2308.03448v2">Paper</a>).</li>
   <li><b>Dec 1-5, 2023</b>: Add the related code/doc[<a href='https://github.com/Srameo/LED/blob/main/docs/calib_en.md'>EN</a>/<a href='https://github.com/Srameo/LED/blob/main/docs/calib_cn.md'>CN</a>] from <a href="https://github.com/Srameo/LED/pull/14">PR#14</a>/<a href="https://github.com/Srameo/LED/pull/16">PR#16</a>, thanks to @<a href="https://github.com/HYX20011209">HYX20011209</a></li>
   <li><b>Sep 27, 2023</b>: Add the urls to our <a href="https://github.com/Srameo/LED/files/12733867/iccv23_poster.pdf">Poster</a>, <a href="https://srameo.github.io/projects/led-iccv23/assets/slides/iccv23_slides_en.pdf">Slides</a>, and <a href="https://youtu.be/Jo8OTAnUYkU">Video</a>.</li>
   <li><b>Aug 19, 2023</b>: Release relevent files on <a href="https://pan.baidu.com/s/17rA_8GvfNPZJY5Zl9dyILw?pwd=iay5">Baidu Clould</a>(pwd: iay5).</li>
-  <li><b>Aug 15, 2023</b>: For faster benchmark, we released the relevant files in commit <a href="https://github.com/Srameo/LED/commit/fadffc7282b02ab2fcc7fbade65f87217b642588"><code>fadffc7</code></a>.</li>
 </ul>
 <details>
   <summary>History</summary>
   <ul>
+    <li><b>Aug 15, 2023</b>: For faster benchmark, we released the relevant files in commit <a href="https://github.com/Srameo/LED/commit/fadffc7282b02ab2fcc7fbade65f87217b642588"><code>fadffc7</code></a>.</li>
     <li><b>Aug, 2023</b>: We released a Chinese explanation of our paper on <a href="https://zhuanlan.zhihu.com/p/648242095">知乎</a>.</li>
     <li><b>Aug, 2023</b>: Our code is publicly available!</li>
     <li><b>July, 2023</b>: Our paper "Lighting Every Darkness in Two Pairs: A Calibration-Free Pipeline for RAW Denoising" has been accepted by ICCV 2023.</li>
@@ -145,6 +148,30 @@ Or you can just use the following pretrained LED module for custumizing on your 
     <th> - </th>
     <th> [<a href="https://drive.google.com/file/d/1IzOkJuHWQVXmkzFJzQ9-gkPXBlrutO2p/view?usp=drive_link">Google Drive</a>] </th>
     <th> [<a href="/options/LED/pretrain/CVPR20_ELD_Setting_Ratio1-200.yaml">options/LED/pretrain/CVPR20_ELD_Setting_Ratio1-200.yaml</a>] </th>
+  </tr>
+  <tr>
+    <td>LED</td>
+    <th> ELD (5 Virtual Cameras) </th>
+    <th> Pretrain </th>
+    <th> Restormer </th>
+    <th> ELD </th>
+    <th> 100-300 </th>
+    <th> - </th>
+    <th> - </th>
+    <th> [<a href="https://drive.google.com/file/d/1iKNLaNRH5UejstaZbuq83yAdYxLaPa4x/view?usp=drive_link">Google Drive</a>] </th>
+    <th> [<a href="/options/LED/other_arch/Restormer/LED+Restormer_Pretrain.yaml">options/LED/other_arch/Restormer/LED+Restormer_Pretrain.yaml</a>] </th>
+  </tr>
+  <tr>
+    <td>LED</td>
+    <th> ELD (5 Virtual Cameras) </th>
+    <th> Pretrain </th>
+    <th> NAFNet </th>
+    <th> ELD </th>
+    <th> 100-300 </th>
+    <th> - </th>
+    <th> - </th>
+    <th> [<a href="https://drive.google.com/file/d/1FmqGv_YICLX4Gc-aWzvcTl8aWgeJ5cEB/view?usp=drive_link">Google Drive</a>] </th>
+    <th> [<a href="/options/LED/other_arch/NAFNet/LED+NAFNet_Pretrain.yaml">options/LED/other_arch/NAFNet/LED+NAFNet_Pretrain.yaml</a>] </th>
   </tr>
 </table>
 
