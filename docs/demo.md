@@ -61,6 +61,8 @@ python scripts/cutomized_denoiser.py -t [TAG] \
 We provide a script for testing your own RAW images in [image_process.py](/scripts/image_process.py). <br/>
 You could run `python scripts/image_process.py --help` to get detailed information of this scripts.
 > If your camera model is one of {Sony A7S2, Nikon D850}, you can found our pretrained model in [pretrained-models.md](/docs/pretrained-models.md).
+>
+> **Notice that**, if you wish to use the model from release v0.1.1, you need to add the `-opt` parameter: For NAFNet, add `-opt options/base/network_g/nafnet.yaml`. For Restormer, add `-opt options/base/network_g/restormer.yaml`.
 ```bash
 usage: image_process.py [-h] -p PRETRAINED_NETWORK --data_path DATA_PATH [--save_path SAVE_PATH] [-opt NETWORK_OPTIONS] [--ratio RATIO] [--bps BPS] [--led]
 
