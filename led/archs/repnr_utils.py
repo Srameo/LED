@@ -333,7 +333,8 @@ class RepNRBase(nn.Module):
             if isinstance(m, RepNRConv2d):
                 weight, bias = m._weight_and_bias
                 m_bak.weight.data = weight
-                m_bak.bias.data = bias
+                if m_bak.bias is not None:
+                    m_bak.bias.data = bias
                 return
             if not has_repnr_conv(m):
                 m_bak.load_state_dict(m.state_dict())
