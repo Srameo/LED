@@ -1,10 +1,11 @@
-# <div align="center"> Let's Prepare for <a href="https://mipi-challenge.org/MIPI2024/">MIPI@2024</a>! \[<a href="/tools/mipi_starting_kit">Starting-Kit</a>\] </div>
+<!-- # <div align="center"> Let's Prepare for <a href="https://mipi-challenge.org/MIPI2024/">MIPI@2024</a>! \[<a href="/tools/mipi_starting_kit">Starting-Kit</a>\] </div> -->
 
 <p align="center">
-  <img src='.assets/logo-mipi.svg' alt='ICCV23_LED_LOGO' width='200px'/><br/>
+  <img src='.assets/logo.svg' alt='ICCV23_LED_LOGO' width='200px'/><br/>
 </p>
 
-## <div align="center"><a href="https://srameo.github.io/projects/led-extension/">Homepage</a> | <a href="https://arxiv.org/abs/2308.03448v2">Paper</a> | <a href="https://drive.google.com/drive/folders/11MYkjzbPIZ7mJbu9vrgaVC-OwGcOFKsM?usp=sharing">Google Drive</a> | <a href="https://pan.baidu.com/s/17rA_8GvfNPZJY5Zl9dyILw?pwd=iay5">Baidu Cloud</a> | <a href="https://zhuanlan.zhihu.com/p/648242095">知乎</a> | <a href="https://github.com/Srameo/LED/files/12733867/iccv23_poster.pdf">Poster</a> | <a href="https://srameo.github.io/projects/led-iccv23/assets/slides/iccv23_slides_en.pdf">Slides</a> | <a href="https://youtu.be/Jo8OTAnUYkU">Video</a> </div>
+## <div align="center"><a href="https://srameo.github.io/projects/led-extension/">Homepage</a> | <a href="https://arxiv.org/abs/2308.03448v2">Paper</a> | <a href="https://drive.google.com/drive/folders/11MYkjzbPIZ7mJbu9vrgaVC-OwGcOFKsM?usp=sharing">Google Drive</a> | <a href="https://pan.baidu.com/s/17rA_8GvfNPZJY5Zl9dyILw?pwd=iay5">Baidu Cloud</a> | <a href="https://zhuanlan.zhihu.com/p/648242095">知乎</a> | <a href="https://zhuanlan.zhihu.com/p/648242095">MIPI Starting-Kit</a>
+<!-- <a href="https://github.com/Srameo/LED/files/12733867/iccv23_poster.pdf">Poster</a> | <a href="https://srameo.github.io/projects/led-iccv23/assets/slides/iccv23_slides_en.pdf">Slides</a> | <a href="https://youtu.be/Jo8OTAnUYkU">Video</a> </div> -->
 
 <div align="center">
 
@@ -18,7 +19,7 @@ This repository contains the official implementation of the following papers:
 > Lighting Every Darkness in Two Pairs: A Calibration-Free Pipeline for RAW Denoising<br/>
 > [Xin Jin](https://srameo.github.io)<sup>\*</sup>, [Jia-Wen Xiao](https://github.com/schuy1er)<sup>\*</sup>, [Ling-Hao Han](https://scholar.google.com/citations?user=0ooNdgUAAAAJ&hl=en), [Chunle Guo](https://mmcheng.net/clguo/)<sup>\#</sup>, [Ruixun Zhang](https://www.math.pku.edu.cn/teachers/ZhangRuixun%20/index.html), [Xialei Liu](https://mmcheng.net/xliu/), [Chongyi Li](https://li-chongyi.github.io/)<br/>
 > (\* denotes equal contribution. \# denotes the corresponding author.)<br/>
-> In ICCV 2023, \[[Paper Link](https://arxiv.org/abs/2308.03448v1)\]
+> In ICCV 2023, \[[Paper Link](https://arxiv.org/abs/2308.03448v1)\], \[[Poster](https://github.com/Srameo/LED/files/12733867/iccv23_poster.pdf)\], \[[Slides](https://srameo.github.io/projects/led-iccv23/assets/slides/iccv23_slides_en.pdf)\], \[[Video](https://youtu.be/Jo8OTAnUYkU)\]
 
 > Make Explicit Calibration Implicit: Calibrate Denoiser Instead of the Noise Model<br/>
 > [Xin Jin](https://srameo.github.io), [Jia-Wen Xiao](https://github.com/schuy1er), [Ling-Hao Han](https://scholar.google.com/citations?user=0ooNdgUAAAAJ&hl=en), [Chunle Guo](https://mmcheng.net/clguo/)<sup>\#</sup>, [Xialei Liu](https://mmcheng.net/xliu/), [Chongyi Li](https://li-chongyi.github.io/), [Ming-Ming Cheng](https://mmcheng.net/cmm/)<sup>\#</sup><br/>
