@@ -1,0 +1,129 @@
+# general settings
+name: Train_step1
+model_type: RatioMapEstimatorModel
+scale: 1
+num_gpu: 1
+manual_seed: 2022
+metric_in_srgb: false
+CRF_path: datasets/EMoR
+
+# TODO: update the path to the dataroot
+# dataset and data loader settings
+datasets:
+  train:
+    name: EstimatorTrain
+    type: EstimatorHDRRAWDataset
+    dataroot: path/to/RAWHDRnpz
+    postfix: npz
+    which_meta: gt
+    data_pair_list: datasets/txtfiles/HDR/train.txt
+    zero_clip: false
+    crop_size: ~
+    load_in_mem: true
+
+    ratio_range: [1, 31]
+    noise_type: ptrqc
+    
+
+    use_patches: false
+
+    use_hflip: true
+    use_rot: true
+    crop_size: 512
+    load_in_mem: false
+
+    # data loadecr
+    num_worker_per_gpu: 8
+    batch_size_per_gpu: 1
+    dataset_enlarge_ratio: 1
+    prefetch_mode: ~
+
+
+noise_g:
+  noise_type: ptrqc
+  camera_params:
+    SonyA7M4:
+      Kmin: 0.5176822379876143
+      Kmax: 37.48342111254088
+      Row:
+        slope: 0.8498868627654588
+        bias: -2.508114778989769
+        sigma: 0.2539644785570933
+      Gaussian:
+        slope: 0.9469078551868472
+        bias: 0.16045036103138344
+        sigma: 0.20521559771812753
+      TurkeyLambda:
+        slope: 0.8741245752046553
+        bias: -0.7834371464250983
+        sigma: 0.24359869793646144
+        lambda: [-0.09686645120382309, -0.20266661047935486, -0.21817433834075928, -0.2772795557975769, -0.26944655179977417, -0.271323561668396, -0.2704177498817444, -0.2713994085788727, -0.27039051055908203, -0.2710208296775818, -0.2720312476158142, -0.2751300632953644, -0.2763080298900604, -0.27588126063346863, -0.2749999165534973, -0.27548256516456604, -0.27511167526245117, -0.276935875415802, -0.28096914291381836, -0.2802513539791107, -0.28123438358306885, -0.28208523988723755, -0.28266826272010803, -0.2647216022014618, -0.26392486691474915, -0.26441627740859985, -0.2643108367919922, -0.2627350389957428, -0.26077425479888916, -0.2635541260242462]
+      ColorBias: [[0.23521856874227523, 0.22085916072130204, 0.2863488158583641, 0.22595973789691925], [0.3256998673081398, 0.3030224359035492, 0.34010037809610366, 0.3117868521809578], [0.2417914468050003, 0.23460582494735718, 0.2810402739048004, 0.2346685606241226], [0.2893064874410629, 0.2924955692887306, 0.3213977232575417, 0.32337920874357223], [0.25456790179014205, 0.2652137302979827, 0.304450766146183, 0.29432806588709354], [0.1782449632883072, 0.30211541056632996, 0.2497684806585312, 0.24955467879772186], [0.43470048904418945, 0.4313555061817169, 0.34231114387512207, 0.35701221227645874], [0.34076905250549316, -0.01008229423314333, 0.42228585481643677, 0.144450843334198], [0.09368899464607239, 0.10415662825107574, 0.3285943269729614, 0.05827445909380913], [0.13945339620113373, 0.23084817826747894, 0.13442949950695038, 0.28657567501068115], [0.252593609985197, 0.2493764951825142, 0.612515584230423, 0.6146858245134353], [0.16977471113204956, -0.08632060885429382, 0.5320069193840027, 0.3316039741039276], [0.3789997398853302, 0.4710197448730469, 0.5400363206863403, 0.7923370003700256], [0.3004434108734131, 0.2512214779853821, 0.7026330232620239, 0.65498948097229], [0.3602710623666644, 0.3627533086016774, 0.8907627087831497, 1.0329724252223969], [-0.18567052483558655, 0.4224573075771332, 0.8947332501411438, 1.0053366422653198], [0.6430071445275098, 0.3353357759770006, 2.0499183797836302, 1.9346534669399262], [0.960235595703125, -0.4397820830345154, 1.5321524143218994, 1.1829473972320557]]
+  engine: torch
+
+
+# network structures
+network_g:
+  type: UNetArch
+  inchannels: 4
+  outchannels: 1
+  channels: 32
+
+network_d:
+  type: UNetArch
+  inchannels: 4
+  outchannels: 1
+  channels: 32
+
+# path to the pretrained models
+network_d_path: ~
+
+# path
+path:
+  pretrain_network_g: ~
+  strict_load_g: true
+  resume_state: ~
+
+train:
+  optim_g:
+    type: Adam
+    lr: !!float 1e-4
+    weight_decay: 0
+    betas: [0.9, 0.999]
+
+  scheduler:
+    type: HandieLR
+    milestones: [20000, 24000]
+    lrs: [9.0e-5, 8.0e-5]
+
+  total_iter: 25000
+  warmup_iter: -1  # no warm up
+
+  # losses
+  pixel_opt:
+    type: RAWL1Loss
+    loss_weight: 1.0
+    reduction: mean
+
+# validation settings
+val:
+  val_freq: !!float 9999999999999
+  save_img: false
+  calculate_metric_in_batch: true
+  illumination_correct: true
+
+  metrics:
+    psnr: # metric name, can be arbitrary
+      type: calculate_psnr
+      crop_border: 2
+      test_y_channel: false
+    ssim: # metric name, can be arbitrary
+      type: calculate_ssim
+      crop_border: 2
+      test_y_channel: false
+
+# logging settings
+logger:
+  print_freq: 200
+  save_checkpoint_freq: !!float 1288
+  use_tb_logger: true
