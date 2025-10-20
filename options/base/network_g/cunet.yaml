@@ -1,0 +1,5 @@
+network_g:
+  type: CUNetArch
+  inchannels: 4
+  outchannels: 4
+  channels: 32

@@ -1,0 +1,5 @@
+network_g:
+  type: UNetArch
+  inchannels: 4
+  outchannels: 1
+  channels: 32
