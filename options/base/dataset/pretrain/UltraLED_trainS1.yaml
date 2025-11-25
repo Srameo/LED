@@ -1,0 +1,22 @@
+datasets:
+  train:
+    name: EstimatorTrain
+    type: EstimatorHDRRAWDataset
+    dataroot: ../../../defaultShare/archive/mengyuang/RAWHDRnpz
+    postfix: npz
+    which_meta: gt
+    data_pair_list: datasets/txtfiles/HDR/train.txt
+    zero_clip: false
+    crop_size: ~
+    load_in_mem: true
+
+    ratio_range: [50, 200]
+    noise_type: ptrqc
+    
+
+    use_patches: false
+
+    use_hflip: true
+    use_rot: true
+    crop_size: 512
+    load_in_mem: false
