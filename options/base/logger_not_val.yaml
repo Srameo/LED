@@ -1,0 +1,21 @@
+val:
+  val_freq: !!float 9999999999999
+  save_img: false
+  calculate_metric_in_batch: true
+  illumination_correct: true
+
+  metrics:
+    psnr: # metric name, can be arbitrary
+      type: calculate_psnr
+      crop_border: 2
+      test_y_channel: false
+    ssim: # metric name, can be arbitrary
+      type: calculate_ssim
+      crop_border: 2
+      test_y_channel: false
+
+# logging settings
+logger:
+  print_freq: 200
+  save_checkpoint_freq: !!float 1288
+  use_tb_logger: true
