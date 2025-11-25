@@ -1,0 +1,23 @@
+base:
+- options/base/dataset/pretrain/UltraLED_trainS1.yaml           # train dataset
+- options/base/network_g/unet41.yaml                        # network estimator
+- options/base/noise_g/noise_g_SonyA7M4.yaml             # noise_g
+- options/base/pretrain/NIPS25_UltraLEDS1.yaml                   # train
+- options/base/logger_not_val.yaml                        # val + logger
+
+# general settings
+name: 1124LED_Train_step1_50to200
+model_type: RatioMapEstimatorModel
+scale: 1
+num_gpu: 1
+manual_seed: 2022
+metric_in_srgb: false
+CRF_path: datasets/EMoR
+
+network_d_path: ~
+
+# path
+path:
+  pretrain_network_g: ~
+  strict_load_g: true
+  resume_state: ~
