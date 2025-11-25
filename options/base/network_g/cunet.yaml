@@ -1,0 +1,11 @@
+network_g:
+  type: CUNetArch
+  inchannels: 4
+  outchannels: 4
+  channels: 32
+
+network_d:
+  type: UNetArch
+  inchannels: 4
+  outchannels: 1
+  channels: 32

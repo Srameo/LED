@@ -95,7 +95,7 @@ class CalibratedNoisyPairGenerator(nn.Module):
         return color_bias
 
     @staticmethod
-    def add_noise(img, noise, noise_params):
+    def add_noise(img, noise, noise_params, if_clip=True):
         tail = [1 for _ in range(img.dim() - 1)]
         ratio = noise_params['isp_dgain'].view(-1, *tail)
         scale = noise_params['scale'].view(-1, 4, *tail[:-1])
@@ -103,15 +103,20 @@ class CalibratedNoisyPairGenerator(nn.Module):
             img += n
         img /= scale
         img = img * ratio
-        return torch.clamp(img, max=1.0)
+        if if_clip:
+            img = torch.clamp(img, max=1.0)
+        return img
 
     @torch.no_grad()
-    def forward(self, img, scale, ratio, vcam_id=None):
+    def forward(self, img, scale, ratio, vcam_id=None, if_clip=True):
         b = img.size(0)
         for_video = True if img.dim() == 5 else False # B, T, C, H, W
         self.index = vcam_id if vcam_id is not None else None
 
-        img_gt = torch.clamp(img, 0, 1)
+        if if_clip:
+            img_gt = torch.clamp(img, 0, 1)
+        else:
+            img_gt = img
         tail = [1 for _ in range(img.dim() - 1)]
         img = img_gt * scale.view(-1, 4, *tail[:-1]) / ratio.view(-1, *tail)
 
@@ -153,7 +158,7 @@ class CalibratedNoisyPairGenerator(nn.Module):
             color_bias = self.sample_color_bias(b, for_video)
             noise['color_bias'] = color_bias
 
-        img_lq = self.add_noise(img, noise, noise_params)
+        img_lq = self.add_noise(img, noise, noise_params, if_clip=if_clip)
 
         return img_gt, img_lq, {
             'cam': self.current_camera,

@@ -1,0 +1,23 @@
+base:
+- options/base/dataset/pretrain/UltraLED_trainS2.yaml           # train dataset
+- options/base/network_g/cunet.yaml                        # network estimator and denoiser
+- options/base/noise_g/noise_g_SonyA7M4.yaml             # noise_g
+- options/base/pretrain/NIPS25_UltraLEDS2.yaml                   # train
+- options/base/logger_not_val.yaml                        # val + logger
+
+# general settings
+name: 1111LED_Train_step2
+model_type: RAWDenoiserModel
+scale: 1
+num_gpu: 1
+manual_seed: 2022
+metric_in_srgb: false
+CRF_path: datasets/EMoR
+
+network_d_path: ../../../defaultShare/archive/mengyuang/experiments/Folder_newtest/BasicSR/20250328_EF_randomArea1024_A7M4_4to1/models/net_g_21896.pth
+
+# path
+path:
+  pretrain_network_g: ~
+  strict_load_g: true
+  resume_state: ~
