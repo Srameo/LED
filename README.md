@@ -1,21 +1,27 @@
 <!-- # <div align="center"> Let's Prepare for <a href="https://mipi-challenge.org/MIPI2024/">MIPI@2024</a>! \[<a href="/tools/mipi_starting_kit">Starting-Kit</a>\] </div> -->
 
 <p align="center">
-  <img src='.assets/logo.svg' alt='ICCV23_LED_LOGO' width='200px'/><br/>
+  <img src='docs/led_ultra.png' alt='ICCV23_LED_LOGO' width='400px'/><br/>
 </p>
+
 
 ## <div align="center"><a href="https://srameo.github.io/projects/led-extension/">Homepage</a> | <a href="https://arxiv.org/abs/2308.03448v2">Paper</a> | <a href="https://drive.google.com/drive/folders/11MYkjzbPIZ7mJbu9vrgaVC-OwGcOFKsM?usp=sharing">Google Drive</a> | <a href="https://pan.baidu.com/s/17rA_8GvfNPZJY5Zl9dyILw?pwd=iay5">Baidu Cloud</a> | <a href="https://zhuanlan.zhihu.com/p/648242095">知乎</a> | <a href="https://github.com/Srameo/LED/tree/main/tools/mipi_starting_kit">MIPI Starting-Kit</a>
 <!-- <a href="https://github.com/Srameo/LED/files/12733867/iccv23_poster.pdf">Poster</a> | <a href="https://srameo.github.io/projects/led-iccv23/assets/slides/iccv23_slides_en.pdf">Slides</a> | <a href="https://youtu.be/Jo8OTAnUYkU">Video</a> </div> -->
 
 <div align="center">
 
-:newspaper:[**News**](#newspaper-news) | :wrench:[**Install**](#wrench-dependencies-and-installation) | :sparkles:[**Models Zoo**](#sparkles-pretrained-models) | :camera:[**Quick Demo**](#camera-quick-demo) | :robot:[**Benchmark**](docs/benchmark.md) | :construction:[**Contribute**](docs/develop.md) | :scroll:[**License**](#scroll-license) | :question:[**FAQ**](https://github.com/Srameo/LED/issues?q=label%3AFAQ+)
+:newspaper:[**News**](#newspaper-news) | :wrench:[**Install**](#wrench-dependencies-and-installation) | :phone:[**README for UltraLED**](#phone-readme-for-ultraled) | :sparkles:[**Models Zoo**](#sparkles-pretrained-models) | :camera:[**Quick Demo**](#camera-quick-demo) | :robot:[**Benchmark**](docs/benchmark.md) | :construction:[**Contribute**](docs/develop.md) | :scroll:[**License**](#scroll-license) | :question:[**FAQ**](https://github.com/Srameo/LED/issues?q=label%3AFAQ+)
 
 </div>
 
 <!-- # :bulb: LED: Lighting Every Darkness in Two Pairs! -->
 
 This repository contains the official implementation of the following papers:
+> UltraLED: Learning to See Everything in Ultra-High Dynamic Range Scenes<br/>
+> [Yuang Meng](https://srameo.github.io)<sup>\*</sup>, [Xin Jin](https://srameo.github.io)<sup>\*</sup>, Lina Lei, [Chunle Guo](https://mmcheng.net/clguo/)<sup>\#</sup>, [Chongyi Li](https://li-chongyi.github.io/)<br/>
+> (\* denotes equal contribution. \# denotes the corresponding author.)<br/>
+> In NeurIPS 2025, \[[Paper Link](https://arxiv.org/abs/2510.07741)\]
+
 > Lighting Every Darkness in Two Pairs: A Calibration-Free Pipeline for RAW Denoising<br/>
 > [Xin Jin](https://srameo.github.io)<sup>\*</sup>, [Jia-Wen Xiao](https://github.com/schuy1er)<sup>\*</sup>, [Ling-Hao Han](https://scholar.google.com/citations?user=0ooNdgUAAAAJ&hl=en), [Chunle Guo](https://mmcheng.net/clguo/)<sup>\#</sup>, [Ruixun Zhang](https://www.math.pku.edu.cn/teachers/ZhangRuixun%20/index.html), [Xialei Liu](https://mmcheng.net/xliu/), [Chongyi Li](https://li-chongyi.github.io/)<br/>
 > (\* denotes equal contribution. \# denotes the corresponding author.)<br/>
@@ -58,6 +64,7 @@ Achieveing <b style='font-size: large'>SOTA performance</b> in <b style='font-si
 > Future work can be found in [todo.md](docs/todo.md).
 
 <ul>
+  <li><b>Dec 18, 2025</b>: Release the training and testing code and the corresponding data for UltraLED.</li>
   <li><b>Jan 13, 2024</b>: Release the <a href="/tools/mipi_starting_kit">starting-kit</a> for <a href="https://mipi-challenge.org/MIPI2024/">MIPI@2024</a>. Additionally, we release the pre-trained parameters of Restormer and NAFNet.</li>
   <li><b>Dec 27, 2023</b>: Update an extension version of our ICCV 23 paper (<a href="https://srameo.github.io/projects/led-extension/">Project Page</a>/<a href="https://arxiv.org/abs/2308.03448v2">Paper</a>).</li>
   <li><b>Dec 1-5, 2023</b>: Add the related code/doc[<a href='https://github.com/Srameo/LED/blob/main/docs/calib_en.md'>EN</a>/<a href='https://github.com/Srameo/LED/blob/main/docs/calib_cn.md'>CN</a>] from <a href="https://github.com/Srameo/LED/pull/14">PR#14</a>/<a href="https://github.com/Srameo/LED/pull/16">PR#16</a>, thanks to @<a href="https://github.com/HYX20011209">HYX20011209</a></li>
@@ -73,6 +80,7 @@ Achieveing <b style='font-size: large'>SOTA performance</b> in <b style='font-si
     <li><b>July, 2023</b>: Our paper "Lighting Every Darkness in Two Pairs: A Calibration-Free Pipeline for RAW Denoising" has been accepted by ICCV 2023.</li>
   </ul>
 </details>
+
 
 
 ## :wrench: Dependencies and Installation
@@ -92,7 +100,13 @@ Achieveing <b style='font-size: large'>SOTA performance</b> in <b style='font-si
    conda activate LED-ICCV23
    ```
 
+## :phone: README for UltraLED
+
+The code for training and evaluation of UltraLED, along with the corresponding data are in [UltraLED.md](docs/UltraLED.md).
+
+
 ## :sparkles: Pretrained Models
+
 > If your requirement is for **academic research** and you would like to benchmark our method, please refer to [pretrained-models.md](docs/pretrained-models.md), where we have a rich variety of models available across a diverse range of methods, training strategies, pre-training, and fine-tuning models.
 
 We are currently dedicated to training an exceptionally capable network that can generalize well to various scenarios using <strong>only two data pairs</strong>! We will update this section once we achieve our goal. Stay tuned and look forward to it!<br/>
@@ -250,6 +264,13 @@ If you find our repo useful for your research, please consider citing our paper:
   author={Jin, Xin and Xiao, Jia-Wen and Han, Ling-Hao and Guo, Chunle and Liu, Xialei and Li, Chongyi and Cheng, Ming-Ming},
   journal={Arxiv},
   year={2023}
+}
+
+@article{meng2025ultraled,
+    title={UltraLED: Learning to See Everything in Ultra-High Dynamic Range Scenes},
+    author={Meng, Yuang and Jin, Xin and Lei, Lina and Guo, Chun-Le and Li, Chongyi},
+    journal={arXiv preprint arXiv:2510.07741},
+    year={2025}
 }
 ```
 
